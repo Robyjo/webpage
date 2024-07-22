@@ -68,11 +68,11 @@ $(document).ready(function(){
     document.getElementById('mountNode').innerHTML = `
   <div>
     Current Time
-    <pre>${new Date().toLocaleTimeString()}</p>
+    <pre>
   </div>
 `;
 
-    //***Using React’s API
+    //***Using Reactï¿½s API
 
     const render = () => {
 
@@ -80,8 +80,7 @@ $(document).ready(function(){
             React.createElement(
                 'div',
                 null,
-                'I keep learning, but cant stop time!',
-
+                
                 React.createElement('pre', null, new Date().toLocaleTimeString())
             ),
             document.getElementById('mountNode2')
