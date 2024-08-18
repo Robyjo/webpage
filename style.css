@@ -288,13 +288,40 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
-    color: #fff;
+    color: inherit; /*Ensure the hover state doesnt change the color*/
 }
+
+/* Styling for the card text */
 .services .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    color: #fff;
 }
+
+/* Override link colors within the cards */
+.services .serv-content .card {
+    color: #fff; /* Set the desired text color for the entire card */
+    text-decoration: none; /* Remove underline */
+}
+
+.services .serv-content .card:link,
+.services .serv-content .card:visited {
+    color: #fff; /* Ensure the color for both unvisited and visited links is #fff */
+}
+
+.services .serv-content .card:hover,
+.services .serv-content .card:active {
+    color: #fff; /* Ensure the color stays the same on hover or active state */
+}
+
+/* Additional rule to ensure no text-decoration appears */
+.services .serv-content .card a {
+    text-decoration: none; /* Remove underline for the <a> tag */
+    color: inherit; /* Inherit color from the parent .card element */
+}
+
+
 /* skills section styling */
 .skills .title::after{
     content: "what i know";
@@ -366,7 +393,13 @@ section .title::after{
     width: 40%;
 }
 .skills-content .right .mysql::before{
-    width: 20%;
+    width: 40%;
+}
+.skills-content .right .python::before{
+    width: 70%;
+}
+.skills-content .right .cplus::before{
+    width: 60%;
 }
 /* teams section styling */
 .teams .title::after{

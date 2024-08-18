@@ -31,13 +31,13 @@ $(document).ready(function(){
     });
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Sofware-Developer", "Programmer", "Web-Developer", "Research-Analyst"],
+        strings: ["Software-Developer", "Programmer", "Web-Developer", "Research-Analyst", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
     var typed = new Typed(".typing-2", {
-        strings: ["Sofware-Developer", "Programmer", "Web-Developer", "Research-Analyst"],
+        strings: ["Software-Developer", "Programmer", "Web-Developer", "Research-Analyst", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -66,8 +66,8 @@ $(document).ready(function(){
     });
     // React script
     document.getElementById('mountNode').innerHTML = `
-  <div>
-    Current Time
+  <div> 
+    Time is our most valuable resource, so make the most of it, focus on learning and achieving your goals, turning every moment into an opportunity for growth and success.
     <pre>
   </div>
 `;
