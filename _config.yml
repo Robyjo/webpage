@@ -1,0 +1,9 @@
+# Site settings
+title: webpage
+description: My portfolio
+baseurl: "/webpage" # the subpath of your site, e.g. /blog
+url: "https://robyjo.github.io/webpage/" # your domain name
+
+# Build settings
+markdown: kramdown
+theme: minima
